@@ -35,6 +35,7 @@ namespace Zeugnis
 			
 								
 				
+			Console.WriteLine("=======Zeugnis=======");
 				Console.Write("Name des Schülers: ");
 				Name = Console.ReadLine();
 				Console.WriteLine("");
@@ -127,30 +128,9 @@ namespace Zeugnis
 				} 
 				
 			} 
+			Console.WriteLine("===================");
 		
-		Console.Write("Geben Sie ihre Fehltage ein: ");
-		Fehltage = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine("");
-		
-		Console.Write("Davon entschuldigt: ");
-		Entschuldigt = Convert.ToInt32(Console.ReadLine());
-		Console.WriteLine("");
-		
-		Unentschuldigt = Fehltage - Entschuldigt;
-		Console.WriteLine(Convert.ToString(Unentschuldigt) + " unentschuldigte Fehltage");
-		
-		if (Unentschuldigt > 30)
-		{
-			Console.WriteLine("Der Schüler wird nicht versetzt");
-			Console.WriteLine("");
-			versetzung = 1;
-		}
-		
-		else
-		{
-			Console.WriteLine("Der Schüler wird versetzt");
-			Console.WriteLine("");
-		}
+
 		Console.WriteLine("Wählbare Fächer:");
 		Console.WriteLine("");
 		
@@ -281,6 +261,30 @@ namespace Zeugnis
 		Console.WriteLine("Notendurschnitt " + "{0:F1}", durchschnitt);
 		Console.WriteLine("");
 		
+				Console.Write("Geben Sie ihre Fehltage ein: ");
+		Fehltage = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("");
+		
+		Console.Write("Davon entschuldigt: ");
+		Entschuldigt = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("");
+		
+		Unentschuldigt = Fehltage - Entschuldigt;
+		Console.WriteLine(Convert.ToString(Unentschuldigt) + " unentschuldigte Fehltage");
+		Console.WriteLine("===================");
+		
+		if (Unentschuldigt > 30)
+		{
+			Console.WriteLine("Der Schüler wird nicht versetzt");
+			Console.WriteLine("");
+			versetzung = 1;
+		}
+		
+		else
+		{
+			Console.WriteLine("Der Schüler wird versetzt");
+			Console.WriteLine("");
+		}
 		
 		
 		
